@@ -8,6 +8,9 @@
  *
 */
 
+html {
+    scroll-behavior: smooth;
+  }
 
 /* ---- Base Rules ---- */
 body {
@@ -72,14 +75,16 @@ section {
 
 .navbar__menu li {
     display: inline-block;
+    padding: 10px;
 }
 
 .navbar__menu .menu__link {
-    display: block;
+    display: inline-block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link:hover {
@@ -198,6 +203,11 @@ section.your-active-class {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+li.active{
+    background: #333;
+    color: #fff !important; 
+}
+
 section.your-active-class .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
@@ -220,4 +230,9 @@ section.your-active-class .landing__container::after {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
 }
