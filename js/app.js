@@ -1,4 +1,3 @@
-// global variables to be used throughout the program
 const startingTime = performance.now();
 const navBarList = document.getElementById('navbar__list');
 const sections = document.querySelectorAll('section');
@@ -23,7 +22,7 @@ buildNavigationBar = (sections)=>{
         listItem.innerHTML = section.id;
         listItem.classList.add('menu__link');
         listItem.id = section.id+'__link';
-        // add the list item to the navbar
+        
         navBarList.appendChild(listItem);
     }
 } 
