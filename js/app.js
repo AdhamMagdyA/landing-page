@@ -24,9 +24,6 @@
 */
 
 const startingTime = performance.now();
-
-
-
 const navBarList = document.getElementById('navbar__list');
 const sections = document.querySelectorAll('section');
 
@@ -39,14 +36,12 @@ const sections = document.querySelectorAll('section');
 */
 
 
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+isElementAppearing = (element) =>{
+    const elementArea = element.getBoundingClientRect();
+    // return true if the element top is under the top of the viewport
+    // and element bottom is above the bottom of the viewport
+    return elementArea.top >= 0 && elementArea.bottom <= window.innerHeight;
+
 }
 
 /**
@@ -67,11 +62,11 @@ for(let section of sections){
 
 // Add class 'active' to section when near top of viewport
 function setActiveSections(section){
-    if(isInViewport(section.querySelector('h2'))){
+    if(isElementAppearing(section.querySelector('h2'))){
         document.getElementById(section.id+'__link').classList.add('active');
         section.classList.add('active');
     }
-    if(!isInViewport(section.querySelector('h2'))){
+    if(!isElementAppearing(section.querySelector('h2'))){
         document.getElementById(section.id+'__link').classList.remove('active');
         section.classList.remove('active');
     }
