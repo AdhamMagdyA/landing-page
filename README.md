@@ -25,5 +25,5 @@ A responsive landing page for the landing page Udacity project. The page contain
 3. run index.html file
 
 ## Footer
-Dont forget to leave a star if you like the repository.
-check my [profile](https://github.com/AdhamMagdyA) for more repositories.
+Dont forget to leave a star if you like the repository. 😉
+check my [profile](https://github.com/AdhamMagdyA) for more repositories. 🤩
