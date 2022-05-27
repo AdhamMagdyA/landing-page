@@ -1,14 +1,29 @@
-# Landing Page Project
+# Landing Page Proejct
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Description](#Description)
+* [Technologies](#Technologies)
+* [Instructions](#Instructions)
+* [Footer](#Footer)
+
+## Description
+
+A responsive landing page for the landing page Udacity project. The page contains four sections and a navigation bar that navigates through them. If any other sections are added or removed, the navigation bar will adapt and update its tabs to work fine with the new sections.
+
+## Technologies
+- HTML
+- CSS
+- JavaScript
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+1. clone the project
+    * `git clone https://github.com/AdhamMagdyA/landing-page.git`
+    * `cd landing-page`
+2. make sure to have internet connection
+3. run index.html file
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
-"# landing-page"  
+## Footer
+Dont forget to leave a star if you like the repository.
+check my [profile](https://github.com/AdhamMagdyA) for more repositories.
