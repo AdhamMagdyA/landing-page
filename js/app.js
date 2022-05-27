@@ -65,7 +65,22 @@ document.addEventListener('scroll', ()=>{
         setActiveSections(section);
     }
 });
-/////////////////////////// End of Prgram ///////////////////////////
+/////////////////////////// End of main Prgram ///////////////////////////
+
+//// navbar responsiveness /////
+const toggleButton = document.getElementById('toggle-btn');
+const navbarMenu = document.getElementsByClassName('navbar__menu')[0];
+// toggle the nevbar menu
+toggleButton.addEventListener('click', ()=>{
+    navbarMenu.classList.toggle('spread');
+});
+// hide the nave bar when clicking outside of it
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('.navbar__menu')){
+        navbarMenu.classList.remove('spread');
+    }
+});
+///////////////////////////////
 
 const endingTime = performance.now();
 

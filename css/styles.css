@@ -7,10 +7,60 @@
  * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
 */
+/*-----responsive-navbar-----*/
+.toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
 
-html {
-    scroll-behavior: smooth;
-  }
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 5px ;
+}
+
+@media (max-width: 650px){
+    .toggle-btn{
+        display: block;
+    }
+
+    .navbar__menu ul{
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    header .navbar__menu .menu__link{
+        /* change to flex */
+        display:none;
+        padding: 0.7em;
+        
+    }
+
+    .navbar__menu{
+        height: 50px;
+        background-color: #03012e;
+    }
+
+    .navbar__menu ul{
+        position: absolute;
+        top: 45px;
+    }
+
+    body .page__header .spread ul li{
+        display: flex;
+    }
+}
 
 /* ---- Base Rules ---- */
 body {
@@ -21,6 +71,18 @@ body {
     color: #fff;
 }
 
+.menu__link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__list{
+    overflow: scroll;
+}
 
 /* Typeography General*/
 h1 {
